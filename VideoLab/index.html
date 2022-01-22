@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+  <head>
+    <body style="background-color:powderblue;"></body>
+   
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"
+      
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="CSS/CSS.css">
+    
+   
+  </head>
+  <body class="bg-gray-300">
+    
+    <div
+      class="min-h-screen container mx-auto flex flex-col items-center justify-center"
+    >
+      <div lcass="title">
+        <h1 style="font-size:70px">Things i need to do</h1>
+      </div>
+      <div class="form w-full my-8">
+        <form id="addForm" class="flex">
+          <input
+            id="newTodo"
+            type="text"
+            class="flex-grow px-4 rounded-l-lg"
+            placeholder="New Todo"
+          />
+          <button
+            class="bg-green-500 text-white py-2 px-4 rounded-r-lg hover:bg-purple-700"
+          >
+            Add
+          </button>
+        </form>
+      </div>
+      <div id="todos" class="w-2/3 space-y-8 my-4">
+        <div>
+          <h3 class="text-6xl text-blue-800">Items that arent done</h3>
+          <ul id="pendingList" class="space-y-4"></ul>
+        </div>
+        <div>
+          <h3 class="text-6xl text-pink-800">Items that are completed</h3>
+          <ul id="completedList" class="space-y-4"></ul>
+        </div>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
